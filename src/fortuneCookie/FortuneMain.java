@@ -48,10 +48,12 @@ public class FortuneMain {
 	 */
 	// method to choose random fortunes from the fortune array
 	public static void getFortune(int numberOfFortunes, String[] fortune) {
-		Random generator = new Random();
+		while (numberOfFortunes > 0){
+			Random generator = new Random();
 		int randomIndex = generator.nextInt(fortune.length);
-		for (int i = 0; i < numberOfFortunes; i++)
-			System.out.println(fortune[randomIndex*i]);
+		System.out.println(fortune[randomIndex]);
+		numberOfFortunes--;
 		
 	}
+}
 }
