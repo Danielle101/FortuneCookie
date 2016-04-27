@@ -14,18 +14,19 @@ public class FortuneMain {
 		while (choice.equalsIgnoreCase("y")) {
 			System.out.println("\nHow many fortune cookies would you like to purchase?(1-3):");
 			int numberOfFortunes = Validator.getValidInt(1, 3);
-			
+			//print different prompts based on how many cookies the user purchases
 			if (numberOfFortunes > 1) {
 				System.out.println("\nThank you for your purchase of " + numberOfFortunes + " fortune cookies!");
 				System.out.println("\nYour fortunes are as follows:");
 			} 
 			else {
 				System.out.println("Thank you for purchasing a fortune cookie!");
-				System.out.println("\nYour fortune:");}
-			
+			System.out.println("\nYour fortune:");
+			}
+			//array with fortunes for the cookies
 			String[] fortune = new String[9];
 			fortune[0] = "You will live a long life!";
-			fortune[1] = "You will be very successful!";
+			fortune[1] = "You will win the lottery!";
 			fortune[2] = "You will have many children!";
 			fortune[3] = "You will meet your soulmate soon!";
 			fortune[4] = "You will get a raise at work!";
@@ -50,6 +51,7 @@ public class FortuneMain {
 		Random generator = new Random();
 		int randomIndex = generator.nextInt(fortune.length);
 		for (int i = 0; i < numberOfFortunes; i++)
-			System.out.println(fortune[randomIndex * i]);
+			System.out.println(fortune[randomIndex*i]);
+		
 	}
 }
