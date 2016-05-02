@@ -33,19 +33,22 @@ public class FortuneMain {
 			fortune[5] = "You will grow 2 inches this year!";
 			fortune[6] = "You will win tickets to the Super Bowl!";
 			fortune[7] = "You will buy more fortune cookies soon!";
-			fortune[8] = "You will be famous java programmer!";
+			fortune[8] = "You will be a famous java programmer!";
 			fortune[9] = "You will marry a millionaire!";
 			fortune[10] = "Two days from now, tomorrow will be yesterday!";
 			fortune[11] = "Your smile will tell you what makes you feel good.";
 			fortune[12] = "You cannot love life until you live the life you love.";
 			fortune[13] ="The man or woman you desire feels the same about you.";
 
+			//print out fortunes based on the amount of cookies the user purchased
 			getFortune(numberOfFortunes, fortune);
 
+			//ask the customer if they would like to buy more cookies
 			choice = Validator.getString("\nWould you like to purchase more fortune cookies?\n");
 		}
+		//exit message
 		System.out.println("Thanks again for your purchase! Come back soon!");
-
+		scan.close();
 	}
 
 	/**
