@@ -24,16 +24,22 @@ public class FortuneMain {
 			System.out.println("\nYour fortune:");
 			}
 			//array with fortunes for the cookies
-			String[] fortune = new String[9];
+			String[] fortune = new String[14];
 			fortune[0] = "You will live a long life!";
 			fortune[1] = "You will win the lottery!";
 			fortune[2] = "You will have many children!";
-			fortune[3] = "You will meet your soulmate soon!";
+			fortune[3] = "You will meet your soulmate today!";
 			fortune[4] = "You will get a raise at work!";
 			fortune[5] = "You will grow 2 inches this year!";
 			fortune[6] = "You will win tickets to the Super Bowl!";
 			fortune[7] = "You will buy more fortune cookies soon!";
 			fortune[8] = "You will be famous java programmer!";
+			fortune[9] = "You will marry a millionaire!";
+			fortune[10] = "Two days from now, tomorrow will be yesterday!";
+			fortune[11] = "Your smile will tell you what makes you feel good.";
+			fortune[12] = "You cannot love life until you live the life you love.";
+			fortune[13] ="The man or woman you desire feels the same about you.";
+
 			getFortune(numberOfFortunes, fortune);
 
 			choice = Validator.getString("\nWould you like to purchase more fortune cookies?\n");
