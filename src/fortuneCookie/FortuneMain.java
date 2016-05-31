@@ -12,15 +12,15 @@ public class FortuneMain {
 		System.out.println("Welcome to the Fortune Cookie Depot!");
 		// prompt for user input
 		while (choice.equalsIgnoreCase("y")) {
-			System.out.println("\nHow many fortune cookies would you like to purchase?(1-3):");
+			System.out.println("\nHow many fortune cookies would you like to buy?(1-3):");
 			int numberOfFortunes = Validator.getValidInt(1, 3);
-			//print different prompts based on how many cookies the user purchases
+			//print different prompts based on how many cookies the user buys
 			if (numberOfFortunes > 1) {
 				System.out.println("\nThank you for your purchase of " + numberOfFortunes + " fortune cookies!");
 				System.out.println("\nYour fortunes are as follows:");
 			} 
 			else {
-				System.out.println("Thank you for purchasing a fortune cookie!");
+				System.out.println("Thank you for buying  a fortune cookie!");
 			System.out.println("\nYour fortune:");
 			}
 			//array with fortunes for the cookies
@@ -44,7 +44,7 @@ public class FortuneMain {
 			getFortune(numberOfFortunes, fortune);
 
 			//ask the customer if they would like to buy more cookies
-			choice = Validator.getString("\nWould you like to purchase more fortune cookies?\n");
+			choice = Validator.getString("\nWould you like to buy more fortune cookies?\n");
 		}
 		//exit message
 		System.out.println("Thanks again for your purchase! Come back soon!");
